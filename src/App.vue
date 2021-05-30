@@ -1,32 +1,72 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="inspire">
+    <v-navigation-drawer class="panel" v-model="drawer" app>
+      <v-list-item class="navbar">
+        <v-list-item-content class="text--text">
+          <v-list-item-title class="title"> 炉石经验计算器 </v-list-item-title>
+          <v-list-item-subtitle class="text--text"> 作者：<a href="https://github.com/nazocthun" class="text--text">nazocthun@GitHub</a>  </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list dense nav>
+        <v-list-item v-for="item in items" :key="item.title" :to="item.to" link>
+          <v-list-item-icon>
+            <v-icon class="icon--text">{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title class="icon--text">{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar app scroll-target="#scrolling-techniques-2" class="navbar">
+
+      <v-app-bar-nav-icon @click="drawer = !drawer" class="text--text"></v-app-bar-nav-icon>
+
+      <v-app-bar-title class="text--text">
+        <b>炉石经验计算器</b>
+      </v-app-bar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon @click="switchTheme" class="text--text">
+        <v-icon v-if="$vuetify.theme.dark">mdi-brightness-6</v-icon>
+        <v-icon v-if="!$vuetify.theme.dark">mdi-brightness-4</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main class="background">
+      <router-view></router-view>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  data: () => ({
+    drawer: null,
+    items: [
+      { title: "计算器", icon: "mdi-calculator-variant", to: "/" },
+      { title: "游戏数据", icon: "mdi-image", to: "/data" },
+      { title: "战令奖励查询", icon: "mdi-image", to: "/pass" },
+      { title: "使用说明", icon: "mdi-help-box", to: "/readme" },
+      { title: "打赏作者", icon: "mdi-help-box", to: "/sponsor" },
+    ],
+  }),
+  mounted() {
+    //this.$vuetify.theme.dark = localStorage.darkMode
+  },
+  methods: {
+    switchTheme() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+      localStorage.setItem('theme', this.$vuetify.theme.dark ? 'dark' : 'light');
     }
-  }
-}
-</style>
+    
+  },
+};
+</script>

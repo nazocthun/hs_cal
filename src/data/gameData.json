@@ -1,0 +1,33 @@
+{
+    "gameExp": {
+        "ranked": {
+            "win": 8,
+            "lose": 6
+        },
+        "battlegrounds": {
+            "win": 6,
+            "lose": 4
+        },
+        "duels": {
+            "win": 6,
+            "lose": 4
+        },
+        "arena": {
+            "win": 6,
+            "lose": 4
+        },
+        "brawl": {
+            "win": 6,
+            "lose": 4
+        },
+        "casual": {
+            "win": 6,
+            "lose": 4
+        },
+        "pratice": {
+            "win": 2,
+            "lose": 2
+        }
+    },
+    "questExpPerWeek": 12650
+}

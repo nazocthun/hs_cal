@@ -1,0 +1,2017 @@
+{
+    "1": {
+        "exp": 0,
+        "totalExp": 0,
+        "freePrize": "曼科里克（无法制作的传说卡牌）",
+        "passPrize": "10%经验值加成，钻石卡牌剑圣萨穆罗（不可分解）"
+    },
+    "2": {
+        "exp": 100,
+        "totalExp": 100,
+        "freePrize": "50金币"
+    },
+    "3": {
+        "exp": 100,
+        "totalExp": 200,
+        "freePrize": "贫瘠之地卡牌包"
+    },
+    "4": {
+        "exp": 150,
+        "totalExp": 350,
+        "freePrize": "2张金色剧毒魔蝎（无法制作的普通卡牌）"
+    },
+    "5": {
+        "exp": 150,
+        "totalExp": 500,
+        "freePrize": "贫瘠之地卡牌包",
+        "passPrize": "年轻的洛卡拉英雄皮肤（战士）"
+    },
+    "6": {
+        "exp": 225,
+        "totalExp": 725,
+        "freePrize": "2张金色苦工（无法制作的普通卡牌）"
+    },
+    "7": {
+        "exp": 225,
+        "totalExp": 950,
+        "freePrize": "50金币"
+    },
+    "8": {
+        "exp": 300,
+        "totalExp": 1250,
+        "freePrize": "2张金色放猪牧人（无法制作的普通卡牌）"
+    },
+    "9": {
+        "exp": 300,
+        "totalExp": 1550,
+        "freePrize": "贫瘠之地卡牌包"
+    },
+    "10": {
+        "exp": 325,
+        "totalExp": 1875,
+        "freePrize": "随机史诗卡牌",
+        "passPrize": "新兵库尔特鲁斯英雄皮肤（恶魔猎手）"
+    },
+    "11": {
+        "exp": 325,
+        "totalExp": 2200,
+        "freePrize": "50金币"
+    },
+    "12": {
+        "exp": 350,
+        "totalExp": 2550,
+        "freePrize": "50金币"
+    },
+    "13": {
+        "exp": 350,
+        "totalExp": 2900,
+        "freePrize": "金色莫尔杉哨所（无法制作的稀有卡牌）"
+    },
+    "14": {
+        "exp": 375,
+        "totalExp": 3275,
+        "freePrize": "50金币"
+    },
+    "15": {
+        "exp": 375,
+        "totalExp": 3650,
+        "freePrize": "祖达萨卡背图案",
+        "passPrize": "幸存者泽瑞拉英雄皮肤（牧师）"
+    },
+    "16": {
+        "exp": 400,
+        "totalExp": 4050,
+        "freePrize": "50金币"
+    },
+    "17": {
+        "exp": 400,
+        "totalExp": 4450,
+        "freePrize": "50金币"
+    },
+    "18": {
+        "exp": 425,
+        "totalExp": 4875,
+        "freePrize": "凤凰年卡牌包"
+    },
+    "19": {
+        "exp": 425,
+        "totalExp": 5300,
+        "freePrize": "50金币"
+    },
+    "20": {
+        "exp": 450,
+        "totalExp": 5750,
+        "freePrize": "随机传说卡牌",
+        "passPrize": "15%经验值加成"
+    },
+    "21": {
+        "exp": 450,
+        "totalExp": 6200,
+        "freePrize": "50金币"
+    },
+    "22": {
+        "exp": 550,
+        "totalExp": 6750,
+        "freePrize": "50金币"
+    },
+    "23": {
+        "exp": 600,
+        "totalExp": 7350,
+        "freePrize": "金色火刃侍僧（无法制作的稀有卡牌）"
+    },
+    "24": {
+        "exp": 650,
+        "totalExp": 8000,
+        "freePrize": "50金币"
+    },
+    "25": {
+        "exp": 675,
+        "totalExp": 8675,
+        "freePrize": "凤凰年卡牌包",
+        "passPrize": "金色暗影猎手沃金（无法制作的传说卡牌）"
+    },
+    "26": {
+        "exp": 675,
+        "totalExp": 9350,
+        "freePrize": "50金币"
+    },
+    "27": {
+        "exp": 875,
+        "totalExp": 10225,
+        "freePrize": "50金币"
+    },
+    "28": {
+        "exp": 875,
+        "totalExp": 11100,
+        "freePrize": "金色部落特工（无法制作的稀有卡牌）"
+    },
+    "29": {
+        "exp": 1000,
+        "totalExp": 12100,
+        "freePrize": "50金币"
+    },
+    "30": {
+        "exp": 1100,
+        "totalExp": 13200,
+        "freePrize": "旅店通票",
+        "passPrize": "贫瘠之地卡背图案"
+    },
+    "31": {
+        "exp": 1200,
+        "totalExp": 14400,
+        "freePrize": "50金币"
+    },
+    "32": {
+        "exp": 1200,
+        "totalExp": 15600,
+        "freePrize": "50金币"
+    },
+    "33": {
+        "exp": 1250,
+        "totalExp": 16850,
+        "freePrize": "金色莫尔杉哨所（无法制作的稀有卡牌）"
+    },
+    "34": {
+        "exp": 1250,
+        "totalExp": 18100,
+        "freePrize": "50金币"
+    },
+    "35": {
+        "exp": 1300,
+        "totalExp": 19400,
+        "freePrize": "凤凰年卡牌包"
+    },
+    "36": {
+        "exp": 1300,
+        "totalExp": 20700,
+        "freePrize": "50金币"
+    },
+    "37": {
+        "exp": 1350,
+        "totalExp": 22050,
+        "freePrize": "50金币"
+    },
+    "38": {
+        "exp": 1350,
+        "totalExp": 23400,
+        "freePrize": "金色火刃侍僧（无法制作的稀有卡牌）"
+    },
+    "39": {
+        "exp": 1400,
+        "totalExp": 24800,
+        "freePrize": "50金币"
+    },
+    "40": {
+        "exp": 1400,
+        "totalExp": 26200,
+        "freePrize": "凤凰年卡牌包",
+        "passPrize": "新人洛卡拉英雄皮肤（战士）"
+    },
+    "41": {
+        "exp": 1450,
+        "totalExp": 27650,
+        "freePrize": "50金币"
+    },
+    "42": {
+        "exp": 1450,
+        "totalExp": 29100,
+        "freePrize": "50金币"
+    },
+    "43": {
+        "exp": 1500,
+        "totalExp": 30600,
+        "freePrize": "金色部落特工（无法制作的稀有卡牌）"
+    },
+    "44": {
+        "exp": 1500,
+        "totalExp": 32100,
+        "freePrize": "50金币"
+    },
+    "45": {
+        "exp": 1550,
+        "totalExp": 33650,
+        "freePrize": "旅店通票"
+    },
+    "46": {
+        "exp": 1550,
+        "totalExp": 35200,
+        "freePrize": "50金币"
+    },
+    "47": {
+        "exp": 1600,
+        "totalExp": 36800,
+        "freePrize": "50金币"
+    },
+    "48": {
+        "exp": 1600,
+        "totalExp": 38400,
+        "freePrize": "凤凰年卡牌包"
+    },
+    "49": {
+        "exp": 1650,
+        "totalExp": 40050,
+        "freePrize": "旅店通票"
+    },
+    "50": {
+        "exp": 1650,
+        "totalExp": 41700,
+        "freePrize": "随机传说卡牌",
+        "passPrize": "火牙雷克萨英雄皮肤（猎人）"
+    },
+    "51": {
+        "exp": 1700,
+        "totalExp": 43400,
+        "freePrize": "75金币"
+    },
+    "52": {
+        "exp": 1700,
+        "totalExp": 45100,
+        "freePrize": "75金币"
+    },
+    "53": {
+        "exp": 1750,
+        "totalExp": 46850,
+        "freePrize": "75金币"
+    },
+    "54": {
+        "exp": 1750,
+        "totalExp": 48600,
+        "freePrize": "75金币"
+    },
+    "55": {
+        "exp": 1800,
+        "totalExp": 50400,
+        "freePrize": "凤凰年卡牌包"
+    },
+    "56": {
+        "exp": 1800,
+        "totalExp": 52200,
+        "freePrize": "75金币"
+    },
+    "57": {
+        "exp": 1850,
+        "totalExp": 54050,
+        "freePrize": "75金币"
+    },
+    "58": {
+        "exp": 1850,
+        "totalExp": 55900,
+        "freePrize": "75金币"
+    },
+    "59": {
+        "exp": 1900,
+        "totalExp": 57800,
+        "freePrize": "75金币"
+    },
+    "60": {
+        "exp": 1900,
+        "totalExp": 59700,
+        "freePrize": "凤凰年卡牌包",
+        "passPrize": "精锐库尔特鲁斯英雄皮肤（恶魔猎手）"
+    },
+    "61": {
+        "exp": 1950,
+        "totalExp": 61650,
+        "freePrize": "75金币"
+    },
+    "62": {
+        "exp": 1950,
+        "totalExp": 63600,
+        "freePrize": "75金币"
+    },
+    "63": {
+        "exp": 2000,
+        "totalExp": 65600,
+        "freePrize": "75金币"
+    },
+    "64": {
+        "exp": 2000,
+        "totalExp": 67600,
+        "freePrize": "75金币"
+    },
+    "65": {
+        "exp": 2050,
+        "totalExp": 69650,
+        "freePrize": "金色始生保护者（无法制作的史诗卡牌）"
+    },
+    "66": {
+        "exp": 2050,
+        "totalExp": 71700,
+        "freePrize": "75金币"
+    },
+    "67": {
+        "exp": 2125,
+        "totalExp": 73825,
+        "freePrize": "75金币"
+    },
+    "68": {
+        "exp": 2125,
+        "totalExp": 75950,
+        "freePrize": "75金币"
+    },
+    "69": {
+        "exp": 2250,
+        "totalExp": 78200,
+        "freePrize": "75金币"
+    },
+    "70": {
+        "exp": 2250,
+        "totalExp": 80450,
+        "freePrize": "凤凰年卡牌包",
+        "passPrize": "20%经验值加成"
+    },
+    "71": {
+        "exp": 2375,
+        "totalExp": 82825,
+        "freePrize": "75金币"
+    },
+    "72": {
+        "exp": 2375,
+        "totalExp": 85200,
+        "freePrize": "75金币"
+    },
+    "73": {
+        "exp": 2500,
+        "totalExp": 87700,
+        "freePrize": "75金币"
+    },
+    "74": {
+        "exp": 2500,
+        "totalExp": 90200,
+        "freePrize": "75金币"
+    },
+    "75": {
+        "exp": 2500,
+        "totalExp": 92700,
+        "freePrize": "金色始生保护者（无法制作的史诗卡牌）"
+    },
+    "76": {
+        "exp": 2500,
+        "totalExp": 95200,
+        "freePrize": "100金币"
+    },
+    "77": {
+        "exp": 2500,
+        "totalExp": 97700,
+        "freePrize": "100金币"
+    },
+    "78": {
+        "exp": 2500,
+        "totalExp": 100200,
+        "freePrize": "100金币"
+    },
+    "79": {
+        "exp": 2500,
+        "totalExp": 102700,
+        "freePrize": "100金币"
+    },
+    "80": {
+        "exp": 2500,
+        "totalExp": 105200,
+        "freePrize": "100金币",
+        "passPrize": "碎片追寻者泽瑞拉英雄皮肤（牧师）"
+    },
+    "81": {
+        "exp": 2500,
+        "totalExp": 107700,
+        "freePrize": "100金币"
+    },
+    "82": {
+        "exp": 2500,
+        "totalExp": 110200,
+        "freePrize": "100金币"
+    },
+    "83": {
+        "exp": 2500,
+        "totalExp": 112700,
+        "freePrize": "100金币"
+    },
+    "84": {
+        "exp": 2500,
+        "totalExp": 115200,
+        "freePrize": "100金币"
+    },
+    "85": {
+        "exp": 2500,
+        "totalExp": 117700,
+        "freePrize": "100金币"
+    },
+    "86": {
+        "exp": 2500,
+        "totalExp": 120200,
+        "freePrize": "100金币"
+    },
+    "87": {
+        "exp": 2500,
+        "totalExp": 122700,
+        "freePrize": "100金币"
+    },
+    "88": {
+        "exp": 2500,
+        "totalExp": 125200,
+        "freePrize": "100金币"
+    },
+    "89": {
+        "exp": 2500,
+        "totalExp": 127700,
+        "freePrize": "100金币"
+    },
+    "90": {
+        "exp": 2500,
+        "totalExp": 130200,
+        "freePrize": "150金币",
+        "passPrize": "卡扎库斯幸运币"
+    },
+    "91": {
+        "exp": 2500,
+        "totalExp": 132700,
+        "freePrize": "150金币"
+    },
+    "92": {
+        "exp": 2500,
+        "totalExp": 135200,
+        "freePrize": "150金币"
+    },
+    "93": {
+        "exp": 2500,
+        "totalExp": 137700,
+        "freePrize": "150金币"
+    },
+    "94": {
+        "exp": 2500,
+        "totalExp": 140200,
+        "freePrize": "150金币"
+    },
+    "95": {
+        "exp": 2500,
+        "totalExp": 142700,
+        "freePrize": "150金币"
+    },
+    "96": {
+        "exp": 2500,
+        "totalExp": 145200,
+        "freePrize": "150金币"
+    },
+    "97": {
+        "exp": 2500,
+        "totalExp": 147700,
+        "freePrize": "150金币"
+    },
+    "98": {
+        "exp": 2500,
+        "totalExp": 150200,
+        "freePrize": "150金币"
+    },
+    "99": {
+        "exp": 2500,
+        "totalExp": 152700,
+        "freePrize": "150金币"
+    },
+    "100": {
+        "exp": 2500,
+        "totalExp": 155200,
+        "freePrize": "选择英雄皮肤",
+        "passPrize": "训练师库尔特鲁斯英雄皮肤（恶魔猎手），织光者泽瑞拉英雄皮肤（牧师），部落战士洛卡拉英雄皮肤（战士）"
+    },
+    "101": {
+        "exp": 1325,
+        "totalExp": 156525,
+        "freePrize": "50金币",
+        "passPrize": "注：101-130级 升级所需经验 可能不准确，对结果影响不大"
+    },
+    "102": {
+        "exp": 1330,
+        "totalExp": 157855,
+        "freePrize": "50金币"
+    },
+    "103": {
+        "exp": 1335,
+        "totalExp": 159190,
+        "freePrize": "50金币"
+    },
+    "104": {
+        "exp": 1340,
+        "totalExp": 160530,
+        "freePrize": "50金币"
+    },
+    "105": {
+        "exp": 1345,
+        "totalExp": 161875,
+        "freePrize": "50金币"
+    },
+    "106": {
+        "exp": 1350,
+        "totalExp": 163225,
+        "freePrize": "50金币"
+    },
+    "107": {
+        "exp": 1355,
+        "totalExp": 164580,
+        "freePrize": "50金币"
+    },
+    "108": {
+        "exp": 1360,
+        "totalExp": 165940,
+        "freePrize": "50金币"
+    },
+    "109": {
+        "exp": 1365,
+        "totalExp": 167305,
+        "freePrize": "50金币"
+    },
+    "110": {
+        "exp": 1370,
+        "totalExp": 168675,
+        "freePrize": "50金币"
+    },
+    "111": {
+        "exp": 1375,
+        "totalExp": 170050,
+        "freePrize": "50金币"
+    },
+    "112": {
+        "exp": 1380,
+        "totalExp": 171430,
+        "freePrize": "50金币"
+    },
+    "113": {
+        "exp": 1385,
+        "totalExp": 172815,
+        "freePrize": "50金币"
+    },
+    "114": {
+        "exp": 1390,
+        "totalExp": 174205,
+        "freePrize": "50金币"
+    },
+    "115": {
+        "exp": 1395,
+        "totalExp": 175600,
+        "freePrize": "50金币"
+    },
+    "116": {
+        "exp": 1400,
+        "totalExp": 177000,
+        "freePrize": "50金币"
+    },
+    "117": {
+        "exp": 1405,
+        "totalExp": 178405,
+        "freePrize": "50金币"
+    },
+    "118": {
+        "exp": 1410,
+        "totalExp": 179815,
+        "freePrize": "50金币"
+    },
+    "119": {
+        "exp": 1415,
+        "totalExp": 181230,
+        "freePrize": "50金币"
+    },
+    "120": {
+        "exp": 1420,
+        "totalExp": 182650,
+        "freePrize": "50金币"
+    },
+    "121": {
+        "exp": 1425,
+        "totalExp": 184075,
+        "freePrize": "50金币"
+    },
+    "122": {
+        "exp": 1430,
+        "totalExp": 185505,
+        "freePrize": "50金币"
+    },
+    "123": {
+        "exp": 1435,
+        "totalExp": 186940,
+        "freePrize": "50金币"
+    },
+    "124": {
+        "exp": 1440,
+        "totalExp": 188380,
+        "freePrize": "50金币"
+    },
+    "125": {
+        "exp": 1445,
+        "totalExp": 189825,
+        "freePrize": "50金币"
+    },
+    "126": {
+        "exp": 1450,
+        "totalExp": 191275,
+        "freePrize": "50金币"
+    },
+    "127": {
+        "exp": 1455,
+        "totalExp": 192730,
+        "freePrize": "50金币"
+    },
+    "128": {
+        "exp": 1460,
+        "totalExp": 194190,
+        "freePrize": "50金币"
+    },
+    "129": {
+        "exp": 1465,
+        "totalExp": 195655,
+        "freePrize": "50金币"
+    },
+    "130": {
+        "exp": 1475,
+        "totalExp": 197200,
+        "freePrize": "50金币"
+    },
+    "131": {
+        "exp": 1500,
+        "totalExp": 198700,
+        "freePrize": "50金币"
+    },
+    "132": {
+        "exp": 1500,
+        "totalExp": 200200,
+        "freePrize": "50金币"
+    },
+    "133": {
+        "exp": 1500,
+        "totalExp": 201700,
+        "freePrize": "50金币"
+    },
+    "134": {
+        "exp": 1500,
+        "totalExp": 203200,
+        "freePrize": "50金币"
+    },
+    "135": {
+        "exp": 1500,
+        "totalExp": 204700,
+        "freePrize": "50金币"
+    },
+    "136": {
+        "exp": 1500,
+        "totalExp": 206200,
+        "freePrize": "50金币"
+    },
+    "137": {
+        "exp": 1500,
+        "totalExp": 207700,
+        "freePrize": "50金币"
+    },
+    "138": {
+        "exp": 1500,
+        "totalExp": 209200,
+        "freePrize": "50金币"
+    },
+    "139": {
+        "exp": 1500,
+        "totalExp": 210700,
+        "freePrize": "50金币"
+    },
+    "140": {
+        "exp": 1500,
+        "totalExp": 212200,
+        "freePrize": "50金币"
+    },
+    "141": {
+        "exp": 1500,
+        "totalExp": 213700,
+        "freePrize": "50金币"
+    },
+    "142": {
+        "exp": 1500,
+        "totalExp": 215200,
+        "freePrize": "50金币"
+    },
+    "143": {
+        "exp": 1500,
+        "totalExp": 216700,
+        "freePrize": "50金币"
+    },
+    "144": {
+        "exp": 1500,
+        "totalExp": 218200,
+        "freePrize": "50金币"
+    },
+    "145": {
+        "exp": 1500,
+        "totalExp": 219700,
+        "freePrize": "50金币"
+    },
+    "146": {
+        "exp": 1500,
+        "totalExp": 221200,
+        "freePrize": "50金币"
+    },
+    "147": {
+        "exp": 1500,
+        "totalExp": 222700,
+        "freePrize": "50金币"
+    },
+    "148": {
+        "exp": 1500,
+        "totalExp": 224200,
+        "freePrize": "50金币"
+    },
+    "149": {
+        "exp": 1500,
+        "totalExp": 225700,
+        "freePrize": "50金币"
+    },
+    "150": {
+        "exp": 1500,
+        "totalExp": 227200,
+        "freePrize": "50金币"
+    },
+    "151": {
+        "exp": 1500,
+        "totalExp": 228700,
+        "freePrize": "50金币"
+    },
+    "152": {
+        "exp": 1500,
+        "totalExp": 230200,
+        "freePrize": "50金币"
+    },
+    "153": {
+        "exp": 1500,
+        "totalExp": 231700,
+        "freePrize": "50金币"
+    },
+    "154": {
+        "exp": 1500,
+        "totalExp": 233200,
+        "freePrize": "50金币"
+    },
+    "155": {
+        "exp": 1500,
+        "totalExp": 234700,
+        "freePrize": "50金币"
+    },
+    "156": {
+        "exp": 1500,
+        "totalExp": 236200,
+        "freePrize": "50金币"
+    },
+    "157": {
+        "exp": 1500,
+        "totalExp": 237700,
+        "freePrize": "50金币"
+    },
+    "158": {
+        "exp": 1500,
+        "totalExp": 239200,
+        "freePrize": "50金币"
+    },
+    "159": {
+        "exp": 1500,
+        "totalExp": 240700,
+        "freePrize": "50金币"
+    },
+    "160": {
+        "exp": 1500,
+        "totalExp": 242200,
+        "freePrize": "50金币"
+    },
+    "161": {
+        "exp": 1500,
+        "totalExp": 243700,
+        "freePrize": "50金币"
+    },
+    "162": {
+        "exp": 1500,
+        "totalExp": 245200,
+        "freePrize": "50金币"
+    },
+    "163": {
+        "exp": 1500,
+        "totalExp": 246700,
+        "freePrize": "50金币"
+    },
+    "164": {
+        "exp": 1500,
+        "totalExp": 248200,
+        "freePrize": "50金币"
+    },
+    "165": {
+        "exp": 1500,
+        "totalExp": 249700,
+        "freePrize": "50金币"
+    },
+    "166": {
+        "exp": 1500,
+        "totalExp": 251200,
+        "freePrize": "50金币"
+    },
+    "167": {
+        "exp": 1500,
+        "totalExp": 252700,
+        "freePrize": "50金币"
+    },
+    "168": {
+        "exp": 1500,
+        "totalExp": 254200,
+        "freePrize": "50金币"
+    },
+    "169": {
+        "exp": 1500,
+        "totalExp": 255700,
+        "freePrize": "50金币"
+    },
+    "170": {
+        "exp": 1500,
+        "totalExp": 257200,
+        "freePrize": "50金币"
+    },
+    "171": {
+        "exp": 1500,
+        "totalExp": 258700,
+        "freePrize": "50金币"
+    },
+    "172": {
+        "exp": 1500,
+        "totalExp": 260200,
+        "freePrize": "50金币"
+    },
+    "173": {
+        "exp": 1500,
+        "totalExp": 261700,
+        "freePrize": "50金币"
+    },
+    "174": {
+        "exp": 1500,
+        "totalExp": 263200,
+        "freePrize": "50金币"
+    },
+    "175": {
+        "exp": 1500,
+        "totalExp": 264700,
+        "freePrize": "50金币"
+    },
+    "176": {
+        "exp": 1500,
+        "totalExp": 266200,
+        "freePrize": "50金币"
+    },
+    "177": {
+        "exp": 1500,
+        "totalExp": 267700,
+        "freePrize": "50金币"
+    },
+    "178": {
+        "exp": 1500,
+        "totalExp": 269200,
+        "freePrize": "50金币"
+    },
+    "179": {
+        "exp": 1500,
+        "totalExp": 270700,
+        "freePrize": "50金币"
+    },
+    "180": {
+        "exp": 1500,
+        "totalExp": 272200,
+        "freePrize": "50金币"
+    },
+    "181": {
+        "exp": 1500,
+        "totalExp": 273700,
+        "freePrize": "50金币"
+    },
+    "182": {
+        "exp": 1500,
+        "totalExp": 275200,
+        "freePrize": "50金币"
+    },
+    "183": {
+        "exp": 1500,
+        "totalExp": 276700,
+        "freePrize": "50金币"
+    },
+    "184": {
+        "exp": 1500,
+        "totalExp": 278200,
+        "freePrize": "50金币"
+    },
+    "185": {
+        "exp": 1500,
+        "totalExp": 279700,
+        "freePrize": "50金币"
+    },
+    "186": {
+        "exp": 1500,
+        "totalExp": 281200,
+        "freePrize": "50金币"
+    },
+    "187": {
+        "exp": 1500,
+        "totalExp": 282700,
+        "freePrize": "50金币"
+    },
+    "188": {
+        "exp": 1500,
+        "totalExp": 284200,
+        "freePrize": "50金币"
+    },
+    "189": {
+        "exp": 1500,
+        "totalExp": 285700,
+        "freePrize": "50金币"
+    },
+    "190": {
+        "exp": 1500,
+        "totalExp": 287200,
+        "freePrize": "50金币"
+    },
+    "191": {
+        "exp": 1500,
+        "totalExp": 288700,
+        "freePrize": "50金币"
+    },
+    "192": {
+        "exp": 1500,
+        "totalExp": 290200,
+        "freePrize": "50金币"
+    },
+    "193": {
+        "exp": 1500,
+        "totalExp": 291700,
+        "freePrize": "50金币"
+    },
+    "194": {
+        "exp": 1500,
+        "totalExp": 293200,
+        "freePrize": "50金币"
+    },
+    "195": {
+        "exp": 1500,
+        "totalExp": 294700,
+        "freePrize": "50金币"
+    },
+    "196": {
+        "exp": 1500,
+        "totalExp": 296200,
+        "freePrize": "50金币"
+    },
+    "197": {
+        "exp": 1500,
+        "totalExp": 297700,
+        "freePrize": "50金币"
+    },
+    "198": {
+        "exp": 1500,
+        "totalExp": 299200,
+        "freePrize": "50金币"
+    },
+    "199": {
+        "exp": 1500,
+        "totalExp": 300700,
+        "freePrize": "50金币"
+    },
+    "200": {
+        "exp": 1500,
+        "totalExp": 302200,
+        "freePrize": "50金币"
+    },
+    "201": {
+        "exp": 1500,
+        "totalExp": 303700,
+        "freePrize": "50金币"
+    },
+    "202": {
+        "exp": 1500,
+        "totalExp": 305200,
+        "freePrize": "50金币"
+    },
+    "203": {
+        "exp": 1500,
+        "totalExp": 306700,
+        "freePrize": "50金币"
+    },
+    "204": {
+        "exp": 1500,
+        "totalExp": 308200,
+        "freePrize": "50金币"
+    },
+    "205": {
+        "exp": 1500,
+        "totalExp": 309700,
+        "freePrize": "50金币"
+    },
+    "206": {
+        "exp": 1500,
+        "totalExp": 311200,
+        "freePrize": "50金币"
+    },
+    "207": {
+        "exp": 1500,
+        "totalExp": 312700,
+        "freePrize": "50金币"
+    },
+    "208": {
+        "exp": 1500,
+        "totalExp": 314200,
+        "freePrize": "50金币"
+    },
+    "209": {
+        "exp": 1500,
+        "totalExp": 315700,
+        "freePrize": "50金币"
+    },
+    "210": {
+        "exp": 1500,
+        "totalExp": 317200,
+        "freePrize": "50金币"
+    },
+    "211": {
+        "exp": 1500,
+        "totalExp": 318700,
+        "freePrize": "50金币"
+    },
+    "212": {
+        "exp": 1500,
+        "totalExp": 320200,
+        "freePrize": "50金币"
+    },
+    "213": {
+        "exp": 1500,
+        "totalExp": 321700,
+        "freePrize": "50金币"
+    },
+    "214": {
+        "exp": 1500,
+        "totalExp": 323200,
+        "freePrize": "50金币"
+    },
+    "215": {
+        "exp": 1500,
+        "totalExp": 324700,
+        "freePrize": "50金币"
+    },
+    "216": {
+        "exp": 1500,
+        "totalExp": 326200,
+        "freePrize": "50金币"
+    },
+    "217": {
+        "exp": 1500,
+        "totalExp": 327700,
+        "freePrize": "50金币"
+    },
+    "218": {
+        "exp": 1500,
+        "totalExp": 329200,
+        "freePrize": "50金币"
+    },
+    "219": {
+        "exp": 1500,
+        "totalExp": 330700,
+        "freePrize": "50金币"
+    },
+    "220": {
+        "exp": 1500,
+        "totalExp": 332200,
+        "freePrize": "50金币"
+    },
+    "221": {
+        "exp": 1500,
+        "totalExp": 333700,
+        "freePrize": "50金币"
+    },
+    "222": {
+        "exp": 1500,
+        "totalExp": 335200,
+        "freePrize": "50金币"
+    },
+    "223": {
+        "exp": 1500,
+        "totalExp": 336700,
+        "freePrize": "50金币"
+    },
+    "224": {
+        "exp": 1500,
+        "totalExp": 338200,
+        "freePrize": "50金币"
+    },
+    "225": {
+        "exp": 1500,
+        "totalExp": 339700,
+        "freePrize": "50金币"
+    },
+    "226": {
+        "exp": 1500,
+        "totalExp": 341200,
+        "freePrize": "50金币"
+    },
+    "227": {
+        "exp": 1500,
+        "totalExp": 342700,
+        "freePrize": "50金币"
+    },
+    "228": {
+        "exp": 1500,
+        "totalExp": 344200,
+        "freePrize": "50金币"
+    },
+    "229": {
+        "exp": 1500,
+        "totalExp": 345700,
+        "freePrize": "50金币"
+    },
+    "230": {
+        "exp": 1500,
+        "totalExp": 347200,
+        "freePrize": "50金币"
+    },
+    "231": {
+        "exp": 1500,
+        "totalExp": 348700,
+        "freePrize": "50金币"
+    },
+    "232": {
+        "exp": 1500,
+        "totalExp": 350200,
+        "freePrize": "50金币"
+    },
+    "233": {
+        "exp": 1500,
+        "totalExp": 351700,
+        "freePrize": "50金币"
+    },
+    "234": {
+        "exp": 1500,
+        "totalExp": 353200,
+        "freePrize": "50金币"
+    },
+    "235": {
+        "exp": 1500,
+        "totalExp": 354700,
+        "freePrize": "50金币"
+    },
+    "236": {
+        "exp": 1500,
+        "totalExp": 356200,
+        "freePrize": "50金币"
+    },
+    "237": {
+        "exp": 1500,
+        "totalExp": 357700,
+        "freePrize": "50金币"
+    },
+    "238": {
+        "exp": 1500,
+        "totalExp": 359200,
+        "freePrize": "50金币"
+    },
+    "239": {
+        "exp": 1500,
+        "totalExp": 360700,
+        "freePrize": "50金币"
+    },
+    "240": {
+        "exp": 1500,
+        "totalExp": 362200,
+        "freePrize": "50金币"
+    },
+    "241": {
+        "exp": 1500,
+        "totalExp": 363700,
+        "freePrize": "50金币"
+    },
+    "242": {
+        "exp": 1500,
+        "totalExp": 365200,
+        "freePrize": "50金币"
+    },
+    "243": {
+        "exp": 1500,
+        "totalExp": 366700,
+        "freePrize": "50金币"
+    },
+    "244": {
+        "exp": 1500,
+        "totalExp": 368200,
+        "freePrize": "50金币"
+    },
+    "245": {
+        "exp": 1500,
+        "totalExp": 369700,
+        "freePrize": "50金币"
+    },
+    "246": {
+        "exp": 1500,
+        "totalExp": 371200,
+        "freePrize": "50金币"
+    },
+    "247": {
+        "exp": 1500,
+        "totalExp": 372700,
+        "freePrize": "50金币"
+    },
+    "248": {
+        "exp": 1500,
+        "totalExp": 374200,
+        "freePrize": "50金币"
+    },
+    "249": {
+        "exp": 1500,
+        "totalExp": 375700,
+        "freePrize": "50金币"
+    },
+    "250": {
+        "exp": 1500,
+        "totalExp": 377200,
+        "freePrize": "50金币"
+    },
+    "251": {
+        "exp": 1500,
+        "totalExp": 378700,
+        "freePrize": "50金币"
+    },
+    "252": {
+        "exp": 1500,
+        "totalExp": 380200,
+        "freePrize": "50金币"
+    },
+    "253": {
+        "exp": 1500,
+        "totalExp": 381700,
+        "freePrize": "50金币"
+    },
+    "254": {
+        "exp": 1500,
+        "totalExp": 383200,
+        "freePrize": "50金币"
+    },
+    "255": {
+        "exp": 1500,
+        "totalExp": 384700,
+        "freePrize": "50金币"
+    },
+    "256": {
+        "exp": 1500,
+        "totalExp": 386200,
+        "freePrize": "50金币"
+    },
+    "257": {
+        "exp": 1500,
+        "totalExp": 387700,
+        "freePrize": "50金币"
+    },
+    "258": {
+        "exp": 1500,
+        "totalExp": 389200,
+        "freePrize": "50金币"
+    },
+    "259": {
+        "exp": 1500,
+        "totalExp": 390700,
+        "freePrize": "50金币"
+    },
+    "260": {
+        "exp": 1500,
+        "totalExp": 392200,
+        "freePrize": "50金币"
+    },
+    "261": {
+        "exp": 1500,
+        "totalExp": 393700,
+        "freePrize": "50金币"
+    },
+    "262": {
+        "exp": 1500,
+        "totalExp": 395200,
+        "freePrize": "50金币"
+    },
+    "263": {
+        "exp": 1500,
+        "totalExp": 396700,
+        "freePrize": "50金币"
+    },
+    "264": {
+        "exp": 1500,
+        "totalExp": 398200,
+        "freePrize": "50金币"
+    },
+    "265": {
+        "exp": 1500,
+        "totalExp": 399700,
+        "freePrize": "50金币"
+    },
+    "266": {
+        "exp": 1500,
+        "totalExp": 401200,
+        "freePrize": "50金币"
+    },
+    "267": {
+        "exp": 1500,
+        "totalExp": 402700,
+        "freePrize": "50金币"
+    },
+    "268": {
+        "exp": 1500,
+        "totalExp": 404200,
+        "freePrize": "50金币"
+    },
+    "269": {
+        "exp": 1500,
+        "totalExp": 405700,
+        "freePrize": "50金币"
+    },
+    "270": {
+        "exp": 1500,
+        "totalExp": 407200,
+        "freePrize": "50金币"
+    },
+    "271": {
+        "exp": 1500,
+        "totalExp": 408700,
+        "freePrize": "50金币"
+    },
+    "272": {
+        "exp": 1500,
+        "totalExp": 410200,
+        "freePrize": "50金币"
+    },
+    "273": {
+        "exp": 1500,
+        "totalExp": 411700,
+        "freePrize": "50金币"
+    },
+    "274": {
+        "exp": 1500,
+        "totalExp": 413200,
+        "freePrize": "50金币"
+    },
+    "275": {
+        "exp": 1500,
+        "totalExp": 414700,
+        "freePrize": "50金币"
+    },
+    "276": {
+        "exp": 1500,
+        "totalExp": 416200,
+        "freePrize": "50金币"
+    },
+    "277": {
+        "exp": 1500,
+        "totalExp": 417700,
+        "freePrize": "50金币"
+    },
+    "278": {
+        "exp": 1500,
+        "totalExp": 419200,
+        "freePrize": "50金币"
+    },
+    "279": {
+        "exp": 1500,
+        "totalExp": 420700,
+        "freePrize": "50金币"
+    },
+    "280": {
+        "exp": 1500,
+        "totalExp": 422200,
+        "freePrize": "50金币"
+    },
+    "281": {
+        "exp": 1500,
+        "totalExp": 423700,
+        "freePrize": "50金币"
+    },
+    "282": {
+        "exp": 1500,
+        "totalExp": 425200,
+        "freePrize": "50金币"
+    },
+    "283": {
+        "exp": 1500,
+        "totalExp": 426700,
+        "freePrize": "50金币"
+    },
+    "284": {
+        "exp": 1500,
+        "totalExp": 428200,
+        "freePrize": "50金币"
+    },
+    "285": {
+        "exp": 1500,
+        "totalExp": 429700,
+        "freePrize": "50金币"
+    },
+    "286": {
+        "exp": 1500,
+        "totalExp": 431200,
+        "freePrize": "50金币"
+    },
+    "287": {
+        "exp": 1500,
+        "totalExp": 432700,
+        "freePrize": "50金币"
+    },
+    "288": {
+        "exp": 1500,
+        "totalExp": 434200,
+        "freePrize": "50金币"
+    },
+    "289": {
+        "exp": 1500,
+        "totalExp": 435700,
+        "freePrize": "50金币"
+    },
+    "290": {
+        "exp": 1500,
+        "totalExp": 437200,
+        "freePrize": "50金币"
+    },
+    "291": {
+        "exp": 1500,
+        "totalExp": 438700,
+        "freePrize": "50金币"
+    },
+    "292": {
+        "exp": 1500,
+        "totalExp": 440200,
+        "freePrize": "50金币"
+    },
+    "293": {
+        "exp": 1500,
+        "totalExp": 441700,
+        "freePrize": "50金币"
+    },
+    "294": {
+        "exp": 1500,
+        "totalExp": 443200,
+        "freePrize": "50金币"
+    },
+    "295": {
+        "exp": 1500,
+        "totalExp": 444700,
+        "freePrize": "50金币"
+    },
+    "296": {
+        "exp": 1500,
+        "totalExp": 446200,
+        "freePrize": "50金币"
+    },
+    "297": {
+        "exp": 1500,
+        "totalExp": 447700,
+        "freePrize": "50金币"
+    },
+    "298": {
+        "exp": 1500,
+        "totalExp": 449200,
+        "freePrize": "50金币"
+    },
+    "299": {
+        "exp": 1500,
+        "totalExp": 450700,
+        "freePrize": "50金币"
+    },
+    "300": {
+        "exp": 1500,
+        "totalExp": 452200,
+        "freePrize": "50金币"
+    },
+    "301": {
+        "exp": 1500,
+        "totalExp": 453700,
+        "freePrize": "50金币"
+    },
+    "302": {
+        "exp": 1500,
+        "totalExp": 455200,
+        "freePrize": "50金币"
+    },
+    "303": {
+        "exp": 1500,
+        "totalExp": 456700,
+        "freePrize": "50金币"
+    },
+    "304": {
+        "exp": 1500,
+        "totalExp": 458200,
+        "freePrize": "50金币"
+    },
+    "305": {
+        "exp": 1500,
+        "totalExp": 459700,
+        "freePrize": "50金币"
+    },
+    "306": {
+        "exp": 1500,
+        "totalExp": 461200,
+        "freePrize": "50金币"
+    },
+    "307": {
+        "exp": 1500,
+        "totalExp": 462700,
+        "freePrize": "50金币"
+    },
+    "308": {
+        "exp": 1500,
+        "totalExp": 464200,
+        "freePrize": "50金币"
+    },
+    "309": {
+        "exp": 1500,
+        "totalExp": 465700,
+        "freePrize": "50金币"
+    },
+    "310": {
+        "exp": 1500,
+        "totalExp": 467200,
+        "freePrize": "50金币"
+    },
+    "311": {
+        "exp": 1500,
+        "totalExp": 468700,
+        "freePrize": "50金币"
+    },
+    "312": {
+        "exp": 1500,
+        "totalExp": 470200,
+        "freePrize": "50金币"
+    },
+    "313": {
+        "exp": 1500,
+        "totalExp": 471700,
+        "freePrize": "50金币"
+    },
+    "314": {
+        "exp": 1500,
+        "totalExp": 473200,
+        "freePrize": "50金币"
+    },
+    "315": {
+        "exp": 1500,
+        "totalExp": 474700,
+        "freePrize": "50金币"
+    },
+    "316": {
+        "exp": 1500,
+        "totalExp": 476200,
+        "freePrize": "50金币"
+    },
+    "317": {
+        "exp": 1500,
+        "totalExp": 477700,
+        "freePrize": "50金币"
+    },
+    "318": {
+        "exp": 1500,
+        "totalExp": 479200,
+        "freePrize": "50金币"
+    },
+    "319": {
+        "exp": 1500,
+        "totalExp": 480700,
+        "freePrize": "50金币"
+    },
+    "320": {
+        "exp": 1500,
+        "totalExp": 482200,
+        "freePrize": "50金币"
+    },
+    "321": {
+        "exp": 1500,
+        "totalExp": 483700,
+        "freePrize": "50金币"
+    },
+    "322": {
+        "exp": 1500,
+        "totalExp": 485200,
+        "freePrize": "50金币"
+    },
+    "323": {
+        "exp": 1500,
+        "totalExp": 486700,
+        "freePrize": "50金币"
+    },
+    "324": {
+        "exp": 1500,
+        "totalExp": 488200,
+        "freePrize": "50金币"
+    },
+    "325": {
+        "exp": 1500,
+        "totalExp": 489700,
+        "freePrize": "50金币"
+    },
+    "326": {
+        "exp": 1500,
+        "totalExp": 491200,
+        "freePrize": "50金币"
+    },
+    "327": {
+        "exp": 1500,
+        "totalExp": 492700,
+        "freePrize": "50金币"
+    },
+    "328": {
+        "exp": 1500,
+        "totalExp": 494200,
+        "freePrize": "50金币"
+    },
+    "329": {
+        "exp": 1500,
+        "totalExp": 495700,
+        "freePrize": "50金币"
+    },
+    "330": {
+        "exp": 1500,
+        "totalExp": 497200,
+        "freePrize": "50金币"
+    },
+    "331": {
+        "exp": 1500,
+        "totalExp": 498700,
+        "freePrize": "50金币"
+    },
+    "332": {
+        "exp": 1500,
+        "totalExp": 500200,
+        "freePrize": "50金币"
+    },
+    "333": {
+        "exp": 1500,
+        "totalExp": 501700,
+        "freePrize": "50金币"
+    },
+    "334": {
+        "exp": 1500,
+        "totalExp": 503200,
+        "freePrize": "50金币"
+    },
+    "335": {
+        "exp": 1500,
+        "totalExp": 504700,
+        "freePrize": "50金币"
+    },
+    "336": {
+        "exp": 1500,
+        "totalExp": 506200,
+        "freePrize": "50金币"
+    },
+    "337": {
+        "exp": 1500,
+        "totalExp": 507700,
+        "freePrize": "50金币"
+    },
+    "338": {
+        "exp": 1500,
+        "totalExp": 509200,
+        "freePrize": "50金币"
+    },
+    "339": {
+        "exp": 1500,
+        "totalExp": 510700,
+        "freePrize": "50金币"
+    },
+    "340": {
+        "exp": 1500,
+        "totalExp": 512200,
+        "freePrize": "50金币"
+    },
+    "341": {
+        "exp": 1500,
+        "totalExp": 513700,
+        "freePrize": "50金币"
+    },
+    "342": {
+        "exp": 1500,
+        "totalExp": 515200,
+        "freePrize": "50金币"
+    },
+    "343": {
+        "exp": 1500,
+        "totalExp": 516700,
+        "freePrize": "50金币"
+    },
+    "344": {
+        "exp": 1500,
+        "totalExp": 518200,
+        "freePrize": "50金币"
+    },
+    "345": {
+        "exp": 1500,
+        "totalExp": 519700,
+        "freePrize": "50金币"
+    },
+    "346": {
+        "exp": 1500,
+        "totalExp": 521200,
+        "freePrize": "50金币"
+    },
+    "347": {
+        "exp": 1500,
+        "totalExp": 522700,
+        "freePrize": "50金币"
+    },
+    "348": {
+        "exp": 1500,
+        "totalExp": 524200,
+        "freePrize": "50金币"
+    },
+    "349": {
+        "exp": 1500,
+        "totalExp": 525700,
+        "freePrize": "50金币"
+    },
+    "350": {
+        "exp": 1500,
+        "totalExp": 527200,
+        "freePrize": "50金币"
+    },
+    "351": {
+        "exp": 1500,
+        "totalExp": 528700,
+        "freePrize": "50金币"
+    },
+    "352": {
+        "exp": 1500,
+        "totalExp": 530200,
+        "freePrize": "50金币"
+    },
+    "353": {
+        "exp": 1500,
+        "totalExp": 531700,
+        "freePrize": "50金币"
+    },
+    "354": {
+        "exp": 1500,
+        "totalExp": 533200,
+        "freePrize": "50金币"
+    },
+    "355": {
+        "exp": 1500,
+        "totalExp": 534700,
+        "freePrize": "50金币"
+    },
+    "356": {
+        "exp": 1500,
+        "totalExp": 536200,
+        "freePrize": "50金币"
+    },
+    "357": {
+        "exp": 1500,
+        "totalExp": 537700,
+        "freePrize": "50金币"
+    },
+    "358": {
+        "exp": 1500,
+        "totalExp": 539200,
+        "freePrize": "50金币"
+    },
+    "359": {
+        "exp": 1500,
+        "totalExp": 540700,
+        "freePrize": "50金币"
+    },
+    "360": {
+        "exp": 1500,
+        "totalExp": 542200,
+        "freePrize": "50金币"
+    },
+    "361": {
+        "exp": 1500,
+        "totalExp": 543700,
+        "freePrize": "50金币"
+    },
+    "362": {
+        "exp": 1500,
+        "totalExp": 545200,
+        "freePrize": "50金币"
+    },
+    "363": {
+        "exp": 1500,
+        "totalExp": 546700,
+        "freePrize": "50金币"
+    },
+    "364": {
+        "exp": 1500,
+        "totalExp": 548200,
+        "freePrize": "50金币"
+    },
+    "365": {
+        "exp": 1500,
+        "totalExp": 549700,
+        "freePrize": "50金币"
+    },
+    "366": {
+        "exp": 1500,
+        "totalExp": 551200,
+        "freePrize": "50金币"
+    },
+    "367": {
+        "exp": 1500,
+        "totalExp": 552700,
+        "freePrize": "50金币"
+    },
+    "368": {
+        "exp": 1500,
+        "totalExp": 554200,
+        "freePrize": "50金币"
+    },
+    "369": {
+        "exp": 1500,
+        "totalExp": 555700,
+        "freePrize": "50金币"
+    },
+    "370": {
+        "exp": 1500,
+        "totalExp": 557200,
+        "freePrize": "50金币"
+    },
+    "371": {
+        "exp": 1500,
+        "totalExp": 558700,
+        "freePrize": "50金币"
+    },
+    "372": {
+        "exp": 1500,
+        "totalExp": 560200,
+        "freePrize": "50金币"
+    },
+    "373": {
+        "exp": 1500,
+        "totalExp": 561700,
+        "freePrize": "50金币"
+    },
+    "374": {
+        "exp": 1500,
+        "totalExp": 563200,
+        "freePrize": "50金币"
+    },
+    "375": {
+        "exp": 1500,
+        "totalExp": 564700,
+        "freePrize": "50金币"
+    },
+    "376": {
+        "exp": 1500,
+        "totalExp": 566200,
+        "freePrize": "50金币"
+    },
+    "377": {
+        "exp": 1500,
+        "totalExp": 567700,
+        "freePrize": "50金币"
+    },
+    "378": {
+        "exp": 1500,
+        "totalExp": 569200,
+        "freePrize": "50金币"
+    },
+    "379": {
+        "exp": 1500,
+        "totalExp": 570700,
+        "freePrize": "50金币"
+    },
+    "380": {
+        "exp": 1500,
+        "totalExp": 572200,
+        "freePrize": "50金币"
+    },
+    "381": {
+        "exp": 1500,
+        "totalExp": 573700,
+        "freePrize": "50金币"
+    },
+    "382": {
+        "exp": 1500,
+        "totalExp": 575200,
+        "freePrize": "50金币"
+    },
+    "383": {
+        "exp": 1500,
+        "totalExp": 576700,
+        "freePrize": "50金币"
+    },
+    "384": {
+        "exp": 1500,
+        "totalExp": 578200,
+        "freePrize": "50金币"
+    },
+    "385": {
+        "exp": 1500,
+        "totalExp": 579700,
+        "freePrize": "50金币"
+    },
+    "386": {
+        "exp": 1500,
+        "totalExp": 581200,
+        "freePrize": "50金币"
+    },
+    "387": {
+        "exp": 1500,
+        "totalExp": 582700,
+        "freePrize": "50金币"
+    },
+    "388": {
+        "exp": 1500,
+        "totalExp": 584200,
+        "freePrize": "50金币"
+    },
+    "389": {
+        "exp": 1500,
+        "totalExp": 585700,
+        "freePrize": "50金币"
+    },
+    "390": {
+        "exp": 1500,
+        "totalExp": 587200,
+        "freePrize": "50金币"
+    },
+    "391": {
+        "exp": 1500,
+        "totalExp": 588700,
+        "freePrize": "50金币"
+    },
+    "392": {
+        "exp": 1500,
+        "totalExp": 590200,
+        "freePrize": "50金币"
+    },
+    "393": {
+        "exp": 1500,
+        "totalExp": 591700,
+        "freePrize": "50金币"
+    },
+    "394": {
+        "exp": 1500,
+        "totalExp": 593200,
+        "freePrize": "50金币"
+    },
+    "395": {
+        "exp": 1500,
+        "totalExp": 594700,
+        "freePrize": "50金币"
+    },
+    "396": {
+        "exp": 1500,
+        "totalExp": 596200,
+        "freePrize": "50金币"
+    },
+    "397": {
+        "exp": 1500,
+        "totalExp": 597700,
+        "freePrize": "50金币"
+    },
+    "398": {
+        "exp": 1500,
+        "totalExp": 599200,
+        "freePrize": "50金币"
+    },
+    "399": {
+        "exp": 1500,
+        "totalExp": 600700,
+        "freePrize": "50金币"
+    },
+    "400": {
+        "exp": 1500,
+        "totalExp": 602200,
+        "freePrize": "50金币"
+    }
+}

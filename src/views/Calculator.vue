@@ -1,5 +1,5 @@
 <template>
-  <div class="calculator pa-6">
+  <div class="calculator pa-5">
     <v-container>
       <v-row>
         <v-col class="col-12 col-xs-12 col-sm-4">
@@ -22,7 +22,7 @@
           </v-row>
 
           <v-row>
-            <v-label>战令已过去{{getDays()}}天</v-label>
+            <v-label>战令已过去{{getDays}}天</v-label>
             <v-label v-if="!advance">，每日获取{{ getExp(currentLevel,currentExp) }}经验</v-label>
           </v-row>
 
@@ -54,7 +54,7 @@
 
           <v-row v-if="gameHourAdvanceSelected">
             <v-text-field
-              v-model="chessHour"
+              v-model="battlegroundsHour"
               :rules="gameHourRules"
               label="战棋 (按照300经验/小时)"
               required
@@ -63,19 +63,19 @@
 
           <v-row v-if="gameHourAdvanceSelected">
             <v-select
-              v-model="currentPassBonus"
+              v-model="customPassBonus"
               :items="passBonus"
               label="战令加成"
             ></v-select>
           </v-row>
 
           <v-row v-if="gameHourAdvanceSelected">
-            <v-label>相当于每日获取{{ (getAdvanceExp(rankedHour,chessHour) * (1 + getPassBonus)).toFixed(0) }}经验</v-label>
+            <v-label>相当于每日获取{{ ((getAdvanceExp(rankedHour,battlegroundsHour) + gameData["questExpPerWeek"] / 7) * (1 + getPassBonus)).toFixed(1) }}经验</v-label>
           </v-row>
 
           <v-row v-if="gameExpAdvanceSelected">
             <v-text-field
-              v-model="dailyExp"
+              v-model="customExp"
               :rules="expRules"
               label="每日经验 (不再计算战令加成)"
               required
@@ -92,7 +92,7 @@
         </v-col>
 
         <v-col class="col-12 col-xs-12 col-sm-8">
-          <v-container>
+          <!-- <v-container class="pa-0"> -->
             <v-simple-table class="background">
               <template v-slot:default>
                 <thead>
@@ -102,14 +102,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="item in formList" :key="item.level" :class="{'past--text': pastDate(item.date),'cantFinish--text':cantFinishDate(item.date)}">
+                  <tr v-for="item in calculatedData" :key="item.level" :class="{'past--text': pastDate(item.date),'cantFinish--text':cantFinishDate(item.date)}">
                     <td>{{ item.level }}</td>
                     <td>{{ item.date.getFullYear() }}年{{ item.date.getMonth()+1 }}月{{ item.date.getDate() }}日</td>
                   </tr>
                 </tbody>
               </template>
             </v-simple-table>
-          </v-container>
+          <!-- </v-container> -->
         </v-col>
       </v-row>
     </v-container>
@@ -123,20 +123,12 @@ var gameData = require("../data/gameData.json");
 export default {
   name: "Calculator",
   data: () => ({
-    advance: false,
-
+    expData: expData,
+    gameData: gameData,
     aDay: 86400000,
 
-    currentLevel: 0,
-    currentExp: 0,
+    passBonus: ["0%", "10%", "15%", "20%"],
 
-    rankedHour: 0,
-    battlegroundsHour: 0,
-    
-    chessHour: 0,
-    dailyExp: 3000,
-    selectAdvance: "gameHourCal",
-    currentPassBonus: "0%",
     levelRules: [
       //(v) => !!v || "请输入等级",
       (v) => /^[0-9]*$/.test(v) || "等级必须为数字",
@@ -151,10 +143,7 @@ export default {
       (v) => /^[0-9]*$/.test(v) || "游戏时间必须为数字",
       (v) => (Number(v)<=24 && Number(v)>=0) || "游戏时间在0-24之间"
     ],
-
-    passBonus: ["0%", "10%", "15%", "20%"],
-
-    formList: [
+    calculatedData: [
       {
         level: 40,
         date: "待计算",
@@ -246,9 +235,6 @@ export default {
     ]
   }),
   computed: {
-    expList() {
-      return expData;
-    },
     gameHourAdvanceSelected() {
       return this.advance && (this.selectAdvance === "gameHourCal")
     },
@@ -256,21 +242,97 @@ export default {
       return this.advance && (this.selectAdvance === "gameExpCal")
     },
     getPassBonus() {
-      switch(this.currentPassBonus) {
+      switch(this.customPassBonus) {
         case "10%": return 0.1
         case "15%": return 0.15
         case "20%": return 0.2
         default: return 0
       }
     },
+    getDays() {
+      const startDate = new Date(2021,2,31)
+      const curTime = new Date()
+      var days = (curTime - startDate) / this.aDay
+      return days.toFixed(0)
+    },
+    currentLevel: {
+      get() {
+        return this.$store.state.currentLevel
+      },
+      set(newValue) {
+        this.$store.commit('changeCurrentLevel', newValue)
+      }
+    },
+    currentExp: {
+      get() {
+        return this.$store.state.currentExp
+      },
+      set(newValue) {
+        this.$store.commit('changeCurrentExp', newValue)
+      }
+    },
+    advance: {
+      get() {
+        return this.$store.state.advance
+      },
+      set(newValue) {
+        this.$store.commit('toggleAdvance', newValue)
+      }
+    },
+    selectAdvance: {
+      get() {
+        return this.$store.state.selectedAdvance
+      },
+      set(newValue) {
+        this.$store.commit('toggleSelectedAdvance', newValue)
+      }
+    },
+    customPassBonus: {
+      get() {
+        return this.$store.state.customPassBonus
+      },
+      set(newValue) {
+        this.$store.commit('changeCustomPassBonus', newValue)
+      }
+    },
+    customExp: {
+      get() {
+        return this.$store.state.customExp
+      },
+      set(newValue) {
+        this.$store.commit('changeCustomExp', newValue)
+      }
+    },
+
+    rankedHour: {
+      get() {
+        return this.$store.state.rankedHour
+      },
+      set(newValue) {
+        this.$store.commit('changeRankedHour', newValue)
+      }
+    },
+    battlegroundsHour: {
+      get() {
+        return this.$store.state.battlegroundsHour
+      },
+      set(newValue) {
+        this.$store.commit('changeBattlegroundsHour', newValue)
+      }
+    },
+
+
+
   },
   methods: {
     calculate() {
       const aDay = this.aDay
       const startDate = new Date(2021,2,31)
 
-      var expList = this.expList
-      var formList = this.formList
+      const expData = this.expData
+      const gameData = this.gameData
+
+      var calculatedData = this.calculatedData
 
       var currentLevel = this.currentLevel
       var currentExp = this.currentExp
@@ -278,19 +340,19 @@ export default {
       var rankedHour = this.rankedHour
       var battlegroundsHour = this.battlegroundsHour
 
-      var levelExp = expList[currentLevel].totalExp
+      var levelExp = expData[currentLevel].totalExp
       var totalExp = levelExp + Number(currentExp)
 
 
       var passBouns = this.getPassBonus
       
-      var dailyExp = this.dailyExp
+      var customExp = this.customExp
 
       var duration = (Date.parse(Date()) - Date.parse(startDate)) / aDay
 
-      for (var i=0 ; i<formList.length ; i++) {
+      for (var i=0 ; i<calculatedData.length ; i++) {
         //需要的经验值
-        var expToEarn = expList[formList[i].level].totalExp - totalExp
+        var expToEarn = expData[calculatedData[i].level].totalExp - totalExp
         //每天获取经验
         var perDayEarn = totalExp / duration
         if (!this.advance) {
@@ -298,10 +360,10 @@ export default {
           var daysToAchieve = expToEarn / perDayEarn
         }
         else if (this.selectAdvance === "gameHourCal") {
-          var daysToAchieve = expToEarn / ((400 * rankedHour + 300 * battlegroundsHour) * (1 + passBouns))
+          var daysToAchieve = expToEarn / ((400 * rankedHour + 300 * battlegroundsHour) * (1 + passBouns) + gameData["questExpPerWeek"]/7)
         }
         else if (this.selectAdvance === "gameExpCal") {
-          var daysToAchieve = expToEarn / dailyExp
+          var daysToAchieve = expToEarn / customExp
         }
         else {
           var daysToAchieve = expToEarn / perDayEarn
@@ -311,7 +373,7 @@ export default {
         
         achieveDate.setTime(Date.parse(Date()) + daysToAchieve * aDay)
         //console.log(achieveDate)
-        formList[i].date = achieveDate
+        calculatedData[i].date = achieveDate
         // achieveDate.getFullYear() + "年" + (achieveDate.getMonth()+1) + "月" + achieveDate.getDate() + "日"        
       }
       
@@ -324,43 +386,17 @@ export default {
       const endDate = new Date(2021,7,10)
       return date > endDate
     },
-    getDays() {
-      const startDate = new Date(2021,2,31)
-      const curTime = new Date()
-      var days = (curTime - startDate) / this.aDay
-      return days.toFixed(0)
-    },
     getExp(currentLevel,currentExp) {
       const startDate = new Date(2021,2,31)
       const curTime = new Date()
       var days = (curTime - startDate) / this.aDay
-      return ((Number(expData[currentLevel].totalExp) + Number(currentExp)) / days).toFixed(2)
+      return ((Number(expData[currentLevel].totalExp) + Number(currentExp)) / days).toFixed(1)
     },
     getAdvanceExp(rankedHour,battlegroundsHour) {
       return rankedHour * 400 + battlegroundsHour * 300
     },
   },
-  watch: {
-    currentLevel(newValue) {
-      localStorage.currentLevel = newValue;
-    },
-    currentExp(newValue) {
-      localStorage.currentExp = newValue;
-    },
-    rankedHour(newValue) {
-      localStorage.rankedHour = newValue;
-    },
-    battlegroundsHour(newValue) {
-      localStorage.battlegroundsHour = newValue;
-    },
-  },
   created() {
-    this.currentLevel = localStorage.currentLevel ? localStorage.currentLevel : 40
-    this.currentExp = localStorage.currentExp ? localStorage.currentExp : 1000
-    this.rankedHour = localStorage.rankedHour ? localStorage.rankedHour : 1
-    this.battlegroundsHour = localStorage.battlegroundsHour ? localStorage.battlegroundsHour : 0
-
-
     this.calculate()
   },
 };

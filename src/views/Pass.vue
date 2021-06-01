@@ -25,7 +25,7 @@
   </v-container>
 </template>
 <script>
-var expData = require("../data/exp.json");
+var expData = require("../data/exp.json")
 
 export default {
   name: "Pass",

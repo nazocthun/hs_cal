@@ -22,8 +22,12 @@
           </v-row>
 
           <v-row>
-            <v-label>战令已过去{{getDays}}天</v-label>
+            <v-label>战令已开始 {{getDays}} 天</v-label>
             <v-label v-if="!advance">，每日获取{{ getExp(currentLevel,currentExp) }}经验</v-label>
+          </v-row>
+
+          <v-row>
+            <v-checkbox v-model="advance" label="高级功能"></v-checkbox>
           </v-row>
 
           <v-row v-if="advance">
@@ -70,7 +74,9 @@
           </v-row>
 
           <v-row v-if="gameHourAdvanceSelected">
-            <v-label>相当于每日获取{{ ((getAdvanceExp(rankedHour,battlegroundsHour) + gameData["questExpPerWeek"] / 7) * (1 + getPassBonus)).toFixed(1) }}经验</v-label>
+            <v-label>约等于每日获取{{ ((getAdvanceExp(rankedHour,battlegroundsHour) + gameData["questExpPerWeek"] / 7) * (1 + getPassBonus)).toFixed(1) }}经验</v-label>
+            <br>
+            <br>
           </v-row>
 
           <v-row v-if="gameExpAdvanceSelected">
@@ -80,10 +86,6 @@
               label="每日经验 (不再计算战令加成)"
               required
             ></v-text-field>
-          </v-row>
-
-          <v-row>
-            <v-checkbox v-model="advance" label="高级功能"></v-checkbox>
           </v-row>
 
           <v-row>

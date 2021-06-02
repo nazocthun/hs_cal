@@ -3,17 +3,23 @@
     <v-container>
       <v-row>
         <v-col class="col-12 col-xs-12 col-sm-6">
-          <v-row>
-            <v-label>游戏经验数据</v-label>
-          </v-row>
-          
+          <v-card class="background">
+            <v-card-title>对局经验收益数据</v-card-title>
+
+            <v-divider class="mx-4"></v-divider>
+            <v-card-subtitle>
+              数据来源于NGA各种帖子<br>
+              每局游戏最长计算30分钟，不保证正确<br>
+               (单位: 经验/分钟)
+             </v-card-subtitle>
+            
             <v-simple-table class="background">
               <template v-slot:default>
                 <thead>
                   <tr>
-                    <th class="text-left">类型 (经验/分钟)</th>
-                    <th class="text-left">胜利</th>
-                    <th class="text-left">失败</th>
+                    <th class="text-left" width="50%">对局类型</th>
+                    <th class="text-left" width="25%">胜利</th>
+                    <th class="text-left" width="25%">失败</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -25,21 +31,27 @@
                 </tbody>
               </template>
             </v-simple-table>
+          </v-card>
+          
+          
+            
           
         </v-col>
 
         <v-col class="col-12 col-xs-12 col-sm-6">
-          <v-row>
-            <v-label>任务收益</v-label>
-          </v-row>
-          
+          <v-card class="background">
+            <v-card-title>任务收益</v-card-title>
+
+            <v-divider class="mx-4"></v-divider>
+            <v-card-subtitle>每日任务按照950/个，每周任务按照1750+1500x2计算</v-card-subtitle>
+
             <v-simple-table class="background">
               <template v-slot:default>
                 <thead>
                   <tr>
-                    <th class="text-left">战令加成</th>
-                    <th class="text-left">每日经验</th>
-                    <th class="text-left">每周经验</th>
+                    <th class="text-left" width="50%">战令加成</th>
+                    <th class="text-left" width="25%">每日经验</th>
+                    <th class="text-left" width="25%">每周经验</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -51,7 +63,7 @@
                 </tbody>
               </template>
             </v-simple-table>
-          
+          </v-card>
         </v-col>
       </v-row>
     </v-container>

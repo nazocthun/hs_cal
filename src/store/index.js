@@ -6,26 +6,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
-
     currentLevel: 40,
     currentExp: 1000,
 
     advance: false,
-
     selectedAdvance: "gameHourCal",
+    customExp: 3000,
     customPassBonus: "0%",
 
     rankedHour: 1,
     battlegroundsHour: 0,
-
-    customExp: 3000,
-
-
-
-
-
-
   },
   getters: {
   },
@@ -40,7 +30,6 @@ export default new Vuex.Store({
     toggleAdvance(state, payload) {
       state.advance = payload
     },
-
     toggleSelectedAdvance(state, payload) {
       state.selectedAdvance = payload
     },
@@ -57,8 +46,6 @@ export default new Vuex.Store({
     changeBattlegroundsHour(state, payload) {
       state.battlegroundsHour = payload
     },
-
-
   },
   actions: {
   },

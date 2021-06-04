@@ -1,12 +1,12 @@
 <template>
   <div class="pa-2">
-    <v-card class="background" id="create">
+    <v-card class="background">
       <v-card-text>
-        <v-simple-table v-if="refresh" class="background" :height="height" fixed-header>
+        <v-simple-table v-if="refresh" :height="height" fixed-header>
           <template v-slot:default>
             <thead>
               <tr>
-                <th class="text-left" id="head">等级</th>
+                <th class="text-left">等级</th>
                 <th class="text-left">升下级所需经验</th>
                 <th class="text-left">总需经验</th>
                 <th class="text-left">奖励</th>
@@ -15,7 +15,7 @@
             </thead>
             <tbody>
               <tr v-for="(item, i) in expData" :key="i">
-                <td :class="{head: i==='1'}">{{ i }}</td>
+                <td>{{ i }}</td>
                 <td>{{ item.exp }}</td>
                 <td>{{ item.totalExp }}</td>
                 <td>{{ item.freePrize }}</td>
@@ -48,25 +48,20 @@ export default {
     expData: expData,
     refresh: true,
     right: true,
+    height: 100,
     
     
   }),
-  updated() {
-    this.height = document.documentElement.clientHeight
+  mounted() {
+    this.height = (document.documentElement.clientWidth < 600 ? document.documentElement.clientHeight - 56 : document.documentElement.clientHeight - 64) - 48
+    window.addEventListener("resize", () => {
+      this.height = (document.documentElement.clientWidth < 600 ? document.documentElement.clientHeight - 56 : document.documentElement.clientHeight - 64) - 48
+    });
   },
   computed: {
-    height: {
-      get() {
-        var clientHeight = document.documentElement.clientHeight
-        return (document.documentElement.clientWidth < 600 ? clientHeight - 56 : clientHeight - 64) * 0.94
-      },
-      set(newValue) {
-        return (document.documentElement.clientWidth < 600 ? newValue - 56 : newValue - 64) * 0.94
-      }
-    }
+
   },
   watch: {
-    
     
   },
   methods: {
@@ -88,14 +83,12 @@ export default {
     color: red;
   }
 
-  #create .v-btn--floating {
-    position: relative;
-  }
-
   .v-btn {
     bottom: 0;
     right: 0;
     position: fixed;
-    margin: 0 30px 20px 0;
+    margin: 0 16px 16px 0;
   }
+
+  
 </style>

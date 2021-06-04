@@ -95,7 +95,7 @@ export default {
   .v-btn {
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     margin: 0 30px 20px 0;
   }
 </style>

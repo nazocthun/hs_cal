@@ -3,6 +3,12 @@
         "exp": 0,
         "totalExp": 0,
         "freePrize": "曼科里克（无法制作的传说卡牌）",
+        "prize": {
+            "card": [0,0,0,1],
+            "gold": 0,
+            "ticket": 0,
+            "pack": 0
+        },
         "passPrize": "10%经验值加成，钻石卡牌剑圣萨穆罗（不可分解）"
     },
     "2": {

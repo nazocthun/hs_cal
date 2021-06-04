@@ -5,6 +5,7 @@ import Data from '../views/Data.vue'
 import Pass from '../views/Pass.vue'
 import Sponsor from '../views/Sponsor.vue'
 import Readme from '../views/Readme.vue'
+import LookUp from '../views/LookUp.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/pass',
     name: 'Pass',
     component: Pass
+  },
+  {
+    path: '/lookup',
+    name: 'LookUp',
+    component: LookUp
   },
   {
     path: '/readme',

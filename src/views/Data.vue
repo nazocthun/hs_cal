@@ -1,9 +1,9 @@
 <template>
-  <div class="calculator pa-5">
-    <v-container>
+  <div class="pa-2">
+    <!-- <v-container> -->
       <v-row>
         <v-col class="col-12 col-xs-12 col-sm-6">
-          <v-card class="background">
+          <v-card>
             <v-card-title>对局经验收益数据</v-card-title>
 
             <v-divider class="mx-4"></v-divider>
@@ -13,7 +13,7 @@
                (单位: 经验/分钟)
              </v-card-subtitle>
             
-            <v-simple-table class="background">
+            <v-simple-table>
               <template v-slot:default>
                 <thead>
                   <tr>
@@ -39,13 +39,12 @@
         </v-col>
 
         <v-col class="col-12 col-xs-12 col-sm-6">
-          <v-card class="background">
+          <v-card>
             <v-card-title>任务收益</v-card-title>
-
             <v-divider class="mx-4"></v-divider>
             <v-card-subtitle>每日任务按照950/个，每周任务按照1750+1500x2计算</v-card-subtitle>
 
-            <v-simple-table class="background">
+            <v-simple-table>
               <template v-slot:default>
                 <thead>
                   <tr>
@@ -66,7 +65,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-container>
+    <!-- </v-container> -->
   </div>
 
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="pa-2">
-    <v-card class="background">
+    <v-card>
       <v-card-text>
         <v-simple-table v-if="refresh" :height="height" fixed-header>
           <template v-slot:default>
@@ -53,9 +53,9 @@ export default {
     
   }),
   mounted() {
-    this.height = (document.documentElement.clientWidth < 600 ? document.documentElement.clientHeight - 56 : document.documentElement.clientHeight - 64) - 48
+    this.height = document.documentElement.clientHeight - 48 - (document.documentElement.clientWidth < 600 ? 56 : 64)
     window.addEventListener("resize", () => {
-      this.height = (document.documentElement.clientWidth < 600 ? document.documentElement.clientHeight - 56 : document.documentElement.clientHeight - 64) - 48
+      this.height = document.documentElement.clientHeight - 48 - (document.documentElement.clientWidth < 600 ? 56 : 64)
     });
   },
   computed: {
@@ -72,8 +72,7 @@ export default {
         	// 重新渲染组件
             this.refresh = true
         })
-    }
-
+    },
   }
 };
 </script>

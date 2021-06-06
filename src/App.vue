@@ -53,14 +53,10 @@ export default {
       { title: "计算器", icon: "mdi-calculator", to: "/" },
       { title: "游戏数据", icon: "mdi-database", to: "/data" },
       { title: "战令奖励查询表", icon: "mdi-file-table-box-outline", to: "/pass" },
-      { title: "已获得奖励查询", icon: "mdi-file-table-box-outline", to: "/lookup" },
-      { title: "使用说明", icon: "mdi-help", to: "/readme" },
+      // { title: "使用说明", icon: "mdi-help", to: "/readme" },
       { title: "打赏作者", icon: "mdi-currency-usd", to: "/sponsor" },
     ],
   }),
-  mounted() {
-    //this.$vuetify.theme.dark = localStorage.darkMode
-  },
   methods: {
     switchTheme() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;

@@ -1,5 +1,5 @@
 <template>
-  <div class="calculator pa-5">
+  <div class="pa-5">
     <v-container>
       <v-row>
         <v-col class="col-12 col-xs-12 col-sm-4">

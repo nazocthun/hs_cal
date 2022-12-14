@@ -1,37 +1,40 @@
 <template>
-  <div class="pa-2">
-    <div class="px-10">
-      <v-menu ref="menu" v-model="seasonSelector" :nudge-right="40" :close-on-click="true" transition="scale-transition"
-        offset-y min-width="auto">
-        <template v-slot:activator="{ on, attrs }">
-          <v-text-field v-model="selectedSeason" label="选择版本" readonly v-bind="attrs" v-on="on" />
-        </template>
-        <v-list>
-          <v-list-item v-for="(seasonInfo, index) in seasons" :key="index" @click="setSelectedSeason(seasonInfo)">
-            <v-list-item-title>{{ seasonInfo.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </div>
-    <v-card class="ma-5" v-for="(item, i) in expData" :key="i">
-      <v-card-title>等级{{ i }}</v-card-title>
-      <v-card-subtitle class="font-weight-bold">
-        <div >
-          升级所需经验：{{ item.exp }}
-        </div>
-        <div>
-          到达本级总需经验：{{ item.totalExp }}
-        </div>
-      </v-card-subtitle>
-      <v-card-text>
-        <div class="orange--text text----darken-4">
-          免费奖励：{{ prizeData[i].freePrize }}
-        </div>
-        <div class="green--text" v-if="prizeData[i].passPrize">
-          战令奖励：{{ prizeData[i].passPrize }}
-        </div>
-      </v-card-text>
-    </v-card>
+  <div class="pa-5">
+    <v-container>
+      <v-row>
+        <v-menu ref="menu" v-model="seasonSelector" :nudge-right="40" :close-on-click="true" transition="scale-transition"
+          offset-y min-width="auto">
+          <template v-slot:activator="{ on, attrs }">
+            <v-text-field v-model="selectedSeason" label="选择版本" readonly v-bind="attrs" v-on="on" />
+          </template>
+          <v-list>
+            <v-list-item v-for="(seasonInfo, index) in seasons" :key="index" @click="setSelectedSeason(seasonInfo)">
+              <v-list-item-title>{{ seasonInfo.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </v-row>
+      <v-card class="ma-5"  v-for="(item, i) in expData" :key="i">
+        <v-card-title>等级{{ i }}</v-card-title>
+        <v-card-subtitle class="font-weight-bold">
+          <div>
+            升级所需经验：{{ item.exp }}
+          </div>
+          <div>
+            到达本级总需经验：{{ item.totalExp }}
+          </div>
+        </v-card-subtitle>
+        <v-card-text>
+          <div class="orange--text text----darken-4">
+            免费奖励：{{ prizeData[i].freePrize }}
+          </div>
+          <div class="green--text" v-if="prizeData[i].passPrize">
+            战令奖励：{{ prizeData[i].passPrize }}
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-container>
+
 
     <v-btn bottom :right="right" fab class="v-btn primary" @click="toTop">
       <span>

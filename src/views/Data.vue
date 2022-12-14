@@ -10,8 +10,8 @@
             <v-card-subtitle>
               数据来源于NGA各种帖子<br>
               每局游戏最长计算30分钟，不保证正确<br>
-               (单位: 经验/分钟)
-             </v-card-subtitle>
+              (单位: 经验/分钟)
+            </v-card-subtitle>
             
             <v-simple-table>
               <template v-slot:default>

@@ -15,34 +15,6 @@
         
       </v-card>
     </v-col>
-    <v-col class="col-12 col-xs-12 col-sm-6">
-      <v-card >
-        <v-card-title>广告位</v-card-title>
-        <v-card-subtitle>麦当当加速</v-card-subtitle>
-        <v-divider class="mx-4"></v-divider>
-        <v-card-text class="text--primary">
-      
-          <div class="text--primary">
-            中转机场，YouTube 4K秒开，可看Netflix， <br>
-            需要的话可以使用我的邀请链接。<br>
-            现在注册有24小时/10GB流量试用。
-          </div>
-      
-        </v-card-text>
-        <v-card-actions>
-          <v-btn
-            color="primary"
-            text
-            @click="handle('https://www.mdd.one/#/register?code=SlP25a3a')"
-          >
-            点击跳转
-          </v-btn>
-        </v-card-actions>
-        
-      </v-card>
-    </v-col>
-
-    
   </v-row>
 
 </template>

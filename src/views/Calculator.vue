@@ -4,6 +4,30 @@
       <v-row>
         <v-col class="col-12 col-xs-12 col-sm-4">
           <v-row>
+            <v-col cols="12" sm="6">
+              <v-menu ref="menu" v-model="startDateMenu" :close-on-content-click="false"
+                :nudge-right="40"
+                transition="scale-transition"
+                offset-y
+                min-width="auto"
+              >
+                <template v-slot:activator="{ on, attrs }">
+                  <v-text-field v-model="startDate" label="开始日期" prepend-icon="mdi-calendar" readonly v-bind="attrs" v-on="on" />
+                </template>
+                <v-date-picker v-model="startDate" locale="zh-cn" @input="setStartDate" />
+              </v-menu>
+            </v-col>
+            <v-col cols="12" sm="6">
+              <v-menu ref="menu" v-model="endDateMenu" :close-on-content-click="false" :nudge-right="40"
+                transition="scale-transition" offset-y min-width="auto">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-text-field v-model="endDate" label="结束日期" prepend-icon="mdi-calendar" readonly v-bind="attrs" v-on="on" />
+                </template>
+                <v-date-picker v-model="endDate" locale="zh-cn" @input="setEndDate" />
+              </v-menu>
+            </v-col>
+          </v-row>
+          <v-row>
             <v-text-field
               v-model="currentLevel"
               :rules="levelRules"
@@ -22,7 +46,7 @@
           </v-row>
 
           <v-row>
-            <v-label>战令已开始 {{getDays}} 天</v-label>
+            <v-label>战令已开始 {{ getDays }} 天</v-label>
             <v-label v-if="!advance">，每日获取{{ getExp(currentLevel,currentExp) }}经验</v-label>
           </v-row>
 
@@ -128,7 +152,10 @@ export default {
     expData: expData,
     gameData: gameData,
     aDay: 86400000,
-
+    startDate: '',
+    endDate: '',
+    startDateMenu: false,
+    endDateMenu: false,
     passBonus: ["0%", "10%", "15%", "20%"],
 
     levelRules: [
@@ -252,7 +279,7 @@ export default {
       }
     },
     getDays() {
-      const startDate = new Date(2021,2,31)
+      const startDate = Date.parse(this.startDate)
       const curTime = new Date()
       var days = (curTime - startDate) / this.aDay
       return days.toFixed(0)
@@ -329,7 +356,7 @@ export default {
   methods: {
     calculate() {
       const aDay = this.aDay
-      const startDate = new Date(2021,2,31)
+      const startDate = Date.parse(this.startDate)
 
       const expData = this.expData
       const gameData = this.gameData
@@ -350,7 +377,8 @@ export default {
       
       var customExp = this.customExp
 
-      var duration = (Date.parse(Date()) - Date.parse(startDate)) / aDay
+      console.log(Date.parse(Date()), startDate, aDay)
+      var duration = (Date.parse(Date()) - startDate) / aDay
 
       for (var i=0 ; i<calculatedData.length ; i++) {
         //需要的经验值
@@ -374,7 +402,7 @@ export default {
         var achieveDate = new Date()
         
         achieveDate.setTime(Date.parse(Date()) + daysToAchieve * aDay)
-        //console.log(achieveDate)
+        // console.log(achieveDate)
         calculatedData[i].date = achieveDate
         // achieveDate.getFullYear() + "年" + (achieveDate.getMonth()+1) + "月" + achieveDate.getDate() + "日"        
       }
@@ -385,11 +413,11 @@ export default {
       return date < curTime
     },
     cantFinishDate(date) {
-      const endDate = new Date(2021,7,10)
+      const endDate = Date.parse(this.endDate)
       return date > endDate
     },
     getExp(currentLevel,currentExp) {
-      const startDate = new Date(2021,2,31)
+      const startDate = Date.parse(this.startDate)
       const curTime = new Date()
       var days = (curTime - startDate) / this.aDay
       return ((Number(expData[currentLevel].totalExp) + Number(currentExp)) / days).toFixed(1)
@@ -397,8 +425,23 @@ export default {
     getAdvanceExp(rankedHour,battlegroundsHour) {
       return rankedHour * 400 + battlegroundsHour * 300
     },
+    setStartDate() {
+      this.startDateMenu = false
+      localStorage.setItem('startDate', this.startDate)
+    },
+    setEndDate() {
+      this.endDateMenu = false
+      localStorage.setItem('endDate', this.endDate)
+    },
   },
   created() {
+    if (!localStorage.getItem('startDate') && !localStorage.getItem('endDate')) {
+      this.startDate = `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`
+      localStorage.setItem('startDate', this.startDate)
+    } else {
+      this.startDate = localStorage.getItem('startDate')
+      this.endDate = localStorage.getItem('endDate')
+    }
     this.calculate()
   },
 };

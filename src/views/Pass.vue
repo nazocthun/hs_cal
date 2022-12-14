@@ -1,56 +1,94 @@
 <template>
   <div class="pa-2">
-    <v-card>
+    <div class="px-10">
+      <v-menu ref="menu" v-model="seasonSelector" :nudge-right="40" :close-on-click="true" transition="scale-transition"
+        offset-y min-width="auto">
+        <template v-slot:activator="{ on, attrs }">
+          <v-text-field v-model="selectedSeason" label="选择版本" readonly v-bind="attrs" v-on="on" />
+        </template>
+        <v-list>
+          <v-list-item v-for="(seasonInfo, index) in seasons" :key="index" @click="setSelectedSeason(seasonInfo)">
+            <v-list-item-title>{{ seasonInfo.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </div>
+    <v-card class="ma-5" v-for="(item, i) in expData" :key="i">
+      <v-card-title>等级{{ i }}</v-card-title>
+      <v-card-subtitle class="font-weight-bold">
+        <div >
+          升级所需经验：{{ item.exp }}
+        </div>
+        <div>
+          到达本级总需经验：{{ item.totalExp }}
+        </div>
+      </v-card-subtitle>
       <v-card-text>
-        <v-simple-table v-if="refresh" :height="height" fixed-header>
-          <template v-slot:default>
-            <thead>
-              <tr>
-                <th class="text-left">等级</th>
-                <th class="text-left">升下级所需经验</th>
-                <th class="text-left">总需经验</th>
-                <th class="text-left">奖励</th>
-                <th class="text-left">通行证奖励</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(item, i) in expData" :key="i">
-                <td>{{ i }}</td>
-                <td>{{ item.exp }}</td>
-                <td>{{ item.totalExp }}</td>
-                <td>{{ item.freePrize }}</td>
-                <td :class="{ 'red--text' : i === '101' }">{{ item.passPrize }}</td>
-              </tr>
-            </tbody>
-          </template>
-        </v-simple-table>
+        <div class="orange--text text----darken-4">
+          免费奖励：{{ prizeData[i].freePrize }}
+        </div>
+        <div class="green--text" v-if="prizeData[i].passPrize">
+          战令奖励：{{ prizeData[i].passPrize }}
+        </div>
       </v-card-text>
-      <v-btn bottom :right="right" fab class="v-btn primary" @click="toTop">
-        <span>
-          <span aria-hidden="true" class="v-icon notranslate">
-            <svg  viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg">
-              <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"></path>
-            </svg>
-          </span>
-        </span>
-      </v-btn>
     </v-card>
+
+    <v-btn bottom :right="right" fab class="v-btn primary" @click="toTop">
+      <span>
+        <span aria-hidden="true" class="v-icon notranslate">
+          <svg  viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg">
+            <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"></path>
+          </svg>
+        </span>
+      </span>
+    </v-btn>
   </div>
 </template>
 <script>
 var expData = require("../data/exp.json")
+var prizeData = require(`../data/prize/season0.json`)
 
 export default {
   name: "Pass",
-  
-
   data: () => ({
     expData: expData,
+    prizeData: prizeData,
     refresh: true,
     right: true,
-    height: 100,
-    
-    
+    height: '600px',
+    seasonSelector: false,
+    selectedSeason: '',
+    selectedSeasonIndex: 0,
+    seasons: [
+      {
+        title: '第七季-巫妖王的进军',
+        index: 7,
+      },
+      {
+        title: '第六季-纳斯利亚堡的悬案',
+        index: 6,
+      },
+      {
+        title: '第五季-探寻沉没之城',
+        index: 5,
+      },
+      {
+        title: '第四季-奥特兰克的决裂',
+        index: 4,
+      },
+      {
+        title: '第三季-暴风城下的集结',
+        index: 3,
+      },
+      {
+        title: '第二季-贫瘠之地的锤炼',
+        index: 2,
+      },
+      {
+        title: '第一季-暗月马戏团',
+        index: 1,
+      },
+    ]
   }),
   mounted() {
     this.height = document.documentElement.clientHeight - 48 - (document.documentElement.clientWidth < 600 ? 56 : 64)
@@ -66,19 +104,32 @@ export default {
   },
   methods: {
     toTop() {
-        this.refresh = false
-        // this.$nextTick可实现在DOM 状态更新后，执行传入的方法。
-        this.$nextTick(() => {
-        	// 重新渲染组件
-            this.refresh = true
-        })
+      scrollTo(0, 0);
     },
+    setSelectedSeason(seasonInfo) {
+      this.selectedSeason = seasonInfo.title
+      this.selectedSeasonIndex = seasonInfo.index
+      this.prizeData = require(`../data/prize/season${this.selectedSeasonIndex}.json`)
+      localStorage.setItem('selectedSeason', this.selectedSeason)
+      localStorage.setItem('selectedSeasonIndex', this.selectedSeasonIndex)
+    },
+    log() {
+      console.log(this.seasonSelector)
+    }
+  },
+  created() {
+    console.log(localStorage.getItem('selectedSeasonIndex'))
+    if (localStorage.getItem('selectedSeasonIndex') && localStorage.getItem('selectedSeason')) {
+      this.selectedSeasonIndex = localStorage.getItem('selectedSeasonIndex')
+      this.selectedSeason = localStorage.getItem('selectedSeason')
+    }
+    this.prizeData = require(`../data/prize/season${this.selectedSeasonIndex}.json`)
   }
 };
 </script>
 
 <style scoped>
-  .red {
+.red {
     color: red;
   }
 
@@ -88,6 +139,8 @@ export default {
     position: fixed;
     margin: 0 16px 16px 0;
   }
-
-  
+  .pass-card-text {
+    height:600px;
+    bottom: 16px;
+  }
 </style>

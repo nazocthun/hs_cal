@@ -23,7 +23,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app scroll-target="#scrolling-techniques-2" class="navbar">
+    <v-app-bar app class="navbar">
 
       <v-app-bar-nav-icon @click="drawer = !drawer" class="text--text"></v-app-bar-nav-icon>
 

@@ -5,6 +5,11 @@
             "win": 8,
             "lose": 6
         },
+        "merpvp": {
+            "label": "佣兵PVP",
+            "win": 8,
+            "lose": 6
+        },
         "battlegrounds": {
             "label": "酒馆战棋",
             "win": 6,
@@ -22,6 +27,11 @@
         },
         "brawl": {
             "label": "乱斗模式",
+            "win": 6,
+            "lose": 4
+        },
+        "mer": {
+            "label": "佣兵PVE",
             "win": 6,
             "lose": 4
         },
